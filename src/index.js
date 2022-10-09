@@ -24,7 +24,7 @@ const httpLink = new HttpLink({
 
 const wsLink = new GraphQLWsLink(
   createClient({
-    url: "wss://chat-app-server101.herokuapp.com/graphql",
+    url: "ws://chat-app-server101.herokuapp.com/graphql",
   })
 );
 const authLink = setContext((_, { headers }) => {
