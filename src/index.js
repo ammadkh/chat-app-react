@@ -19,7 +19,7 @@ import { GraphQLWsLink } from "@apollo/client/link/subscriptions";
 import { createClient } from "graphql-ws";
 
 const httpLink = new HttpLink({
-  uri: "https://chat-app-server101.herokuapp.com/graphql",
+  uri: "http://chat-app-server101.herokuapp.com/graphql",
 });
 
 const wsLink = new GraphQLWsLink(
